@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <!-- 1.) Link the CSS! -->
+         <link rel="stylesheet" href="style.css">
+
         <!-- Remember it's 
             <link rel="__________" link="_____.___"> 
             What are you trying to connect?
@@ -19,7 +21,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- 2.) What do you want to name your business as? -->
-        <title> Name me! </title>
+        <title> Chicken Little </title>
     </head>
     <body>
         <div id="body-container">
@@ -30,7 +32,7 @@
                       is to see how it looks.  -->
 
                 <!-- 3.) What do you want to name your business as? -->
-                <h1 id="header-name"> Name me! </h1>
+                <h1 id="header-name"> Chicken Little </h1>
             </div>
  
             <div id="shop-container">
@@ -48,11 +50,50 @@
                         </div>
                         <!-- How much does this item cost? -->
                         <div class="item-price">$5.00</div>
+                        <button class="buy-button" onclick="buyPage()"> Buy Now </button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="item-img">
+                        <!-- Find a photo online! -->
+                        <img src="image-examples/item-example2.jpg">
+                    </div>
+                    <div class="item-descriptor">
+                        <!-- What do you want to name this item as? -->
+                        <div class="item-name">
+                            Stuffed Chicken
+                        </div>
+                        <!-- How much does this item cost? -->
+                        <div class="item-price">$10.00</div>
+                        <button class="buy-button" onclick="buyPage()"> Buy Now </button>
+                    </div>
+                </div>
+
+                <div class="item-container">
+                    <div class="item-img">
+                        <!-- Find a photo online! -->
+                        <img src="image-examples/item-example3.jpg">
+                        <button class="buy-button" onclick="buyPage()"> Buy Now </button>
+                    </div>
+                    <div class="item-descriptor">
+                        <!-- What do you want to name this item as? -->
+                        <div class="item-name">
+                            Chicken Sticker
+                        </div>
+                        <!-- How much does this item cost? -->
+                        <div class="item-price">$3.00</div>
+                        <button class="buy-button" onclick="buyPage()"> Buy Now </button>
                     </div>
                 </div>
 
             </div>
         </div>
+        <script>
+            function buyPage() {
+                window.location.assign("thankyou-page.html");
+            }
+        </script>
     </body>
     
 </html>
